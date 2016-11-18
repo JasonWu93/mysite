@@ -1,3 +1,6 @@
+
+__author__ = 'Jason Wu'
+
 from django import forms
 
 from .models import Post

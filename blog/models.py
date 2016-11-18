@@ -1,3 +1,6 @@
+
+__author__ = 'Jason Wu'
+
 from django.db import models
 from django.utils import timezone
 

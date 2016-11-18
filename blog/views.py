@@ -1,3 +1,6 @@
+
+__author__ = 'Jason Wu'
+
 from django.shortcuts import redirect
 from django.shortcuts import render
 from django.utils import timezone
@@ -22,7 +25,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('../../', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
